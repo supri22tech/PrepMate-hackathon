@@ -1,0 +1,46 @@
+body {
+    font-family: __"Roboto", sans-serif;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: #333;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid, #ccc;
+}
+
+button {
+    display: block;
+    margin: 15px auto;
+    padding: 10px 25px;
+    background-color: #4cafb5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    line-height: 1.6;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PrepMate</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    </head>
+    <body>
+        <h1>Welcome to PrepMate</h1>
+        <p>Your ultimate companion for exam preparation and study resources.</p>
+        <textarea id="topicInput" placeholder="Enter a topic.."></textarea>
+    <button id="ExplainButton">Explain</button>
+
+    <div id="result">
+        <!-- AI explanation will show here -->
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+    </body>
+</html>
