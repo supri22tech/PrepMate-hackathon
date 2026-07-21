@@ -22,7 +22,7 @@ textarea {
     padding: 10px;
     font-size: 16px;
     border-radius: 5px;
-    border: 1px solid, #ccc;
+    border: 1px solid #ccc;
 }
 
 button {
@@ -43,4 +43,19 @@ button {
     background-color: #fff;
     border-radius: 8px;
     line-height: 1.6;
+}
+
+.download-btn{
+    background-color: #007bff;
+    color: #000;
+    border:none;
+    padding: 10px ;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover{
+    background-color: #0056b3;
 }
