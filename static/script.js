@@ -17,13 +17,11 @@ document.getElementById("ExplainButton").addEventListener("click",async function
 document.getElementById("downloadBtn").addEventListener("click", function() {
     const content = document.getElementById('result').innerText;
     
-    const blob = new Blob([content], { type: 'text/plain' });
-    const url = URL.createObjectURL(blob);
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
     
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = 'prepmate-notes.txt';  // filename, e.g. 'prepmate-notes.txt'
-    link.click();
+    const lines = doc.splitTextToSize(content, 180);  // wraps text to fit page width
+    doc.text(lines, 10, 10);  // x=10, y=10 starting position
     
-    URL.revokeObjectURL(url);
+    doc.save('prepmate-notes.pdf');  // filename, e.g. 'prepmate-notes.pdf'
 });
