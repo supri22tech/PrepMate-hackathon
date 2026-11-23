@@ -1,18 +1,23 @@
-# PrepMate
+# KrishiKavach AI
 
-An AI-powered placement exam preparation assistant that explains topics and generates study guides for students preparing for coding/aptitude assessments.
+A responsive WhatsApp-style crop disease and micro-climate advisory application for farmers.
 
-## Problem
-Many students preparing for placement exams don't have access to paid coaching or mentors to clarify doubts. PrepMate gives free, instant, structured explanations for any topic.
+## Features
+- Seven-language interface with instant translation
+- Leaf image upload and one-click sample diseased leaf
+- Open-Meteo city geocoding and 12-hour weather forecast
+- Gemini 2.5 Flash multilingual leaf analysis
+- Crop/disease, severity, spraying window, and organic/chemical treatment advice
+- Loading, validation, and API error states
 
 ## Tech Stack
-- Python, Flask (backend)
-- HTML, CSS, JavaScript (frontend)
-- Google Gemini API (AI)
+- Python and Flask
+- HTML, CSS, and JavaScript
+- Google Gemini API
+- Open-Meteo Geocoding and Forecast APIs
 
-## How to run locally
-1. Clone the repo
-2. `pip install -r requirements.txt`
-3. Add your `GEMINI_API_KEY` in a `.env` file
-4. Run `python app.py`
-5. Open `localhost:5000`
+## Run locally
+1. Install dependencies: `pip install -r requirements.txt`
+2. Add `GEMINI_API_KEY=your_key` to `.env`
+3. Start the app: `python app.py`
+4. Open `http://localhost:5000`
